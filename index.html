@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+
+    <!-- Fontes profissionais para o site -->
+     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-flex">
+            <div class="nav-left">
+                <span id="brand">&lt;TIAGO/&gt;</span>
+                <!-- Fonte pixel para logo -->
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <div class="nav-right" id="nav-menu">
+                <ul>
+                    <li><a href="#home" id="nav-inicio"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="#sobre" id="nav-sobre"><i class="fa-solid fa-user"></i> Sobre</a></li>
+                    <li><a href="#projetos" id="nav-projetos"><i class="fa-solid fa-code"></i> Projetos</a></li>
+                    <li><a href="#contato" id="nav-contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+                    <li>
+                        <div class="lang-switcher" id="lang-switcher">
+                            <button id="lang-btn" class="lang-btn">
+                                <span class="lang-flag"><img src="https://hatscripts.github.io/circle-flags/flags/br.svg" alt="BR" width="18" style="vertical-align:middle;"></span>
+                                <span class="lang-label">POR</span>
+                                <span class="lang-arrow">&#9660;</span>
+                            </button>
+                            <div class="lang-dropdown">
+                                <div class="lang-option" data-lang="pt-br">
+                                    <img src="https://hatscripts.github.io/circle-flags/flags/br.svg" alt="BR" width="18"> POR
+                                </div>
+                                <div class="lang-option" data-lang="en">
+                                    <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="EN" width="18"> ENG
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="chk"/>
+                            <label class="label" for="chk">
+                                <i class="fa-solid fa-moon"></i>
+                                <i class="fa-solid fa-sun"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-section" id="home">
+            <p data-i18n="bem_vindo">Olá, Seja Bem-vindo(a)</p>
+            <h1 data-i18n="meu_nome">Meu nome é Tiago</h1>
+            <p data-i18n="dev_fullstack">Desenvolvedor Full-Stack</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:seuemail@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cv-download">
+                <a href="cv.pdf" download class="cv-btn">
+                    <i class="fa-solid fa-download"></i> <span data-i18n="baixar_cv">Baixar CV</span>
+                </a>
+            </div>
+        </div>
+        <div class="main-section" id="sobre">
+            <h2 data-i18n="sobre_titulo">Sobre Mim</h2>
+            <p class="sobre-text" data-i18n="sobre1">Oi! Sou o Tiago, estudante de Sistemas de Informação e entusiasta de tecnologia. Gosto de colocar a mão na massa, testar ideias e criar coisas legais com código. Já estudei C, HTML, CSS, Java e estou sempre aprendendo mais.</p>
+            <p class="sobre-text" data-i18n="sobre2">Sou um desenvolvedor apaixonado por criar soluções inovadoras.
+            Tenho experiência em diversas tecnologias e sempre busco aprender mais.</p>  
+            <p class="sobre-text" data-i18n="sobre3">Além disso, gosto de colaborar com outros desenvolvedores e participar de comunidades de código aberto.</p>
+            <p class="sobre-text" data-i18n="sobre4">Você pode ver alguns dos meus projetos no GitHub e entrar em contato comigo para discutir colaborações.</p>
+            <p class="sobre-text" data-i18n="sobre5">Este portfólio é uma forma de mostrar o que venho construindo e aprendendo. Se curtir algo por aqui, bora trocar uma ideia!</p>
+
+                <div class="tech-icons">
+                <div class="tech-icon" data-label="Python">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="tech-icon" data-label="JavaScript">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="tech-icon" data-label="Node.js">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="tech-icon" data-label="Java">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="tech-icon" data-label="PHP">
+                    <i class="fab fa-php"></i>
+                </div>
+                <div class="tech-icon" data-label="C#">
+                    <i class="fab fa-cuttlefish"></i>
+                </div>
+                <div class="tech-icon" data-label="C">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="Spring Boot">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="Ruby on Rails">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" alt="Ruby on Rails" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="Laravel">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="MySQL">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="PostgreSQL">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="MongoDB">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="HTML5">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-icon" data-label="CSS3">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="tech-icon" data-label="React">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="tech-icon" data-label="Angular">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="tech-svg">
+                </div>
+                <div class="tech-icon" data-label="Vue.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="tech-svg">
+                </div>
+            </div>
+        </div>
+        <div class="main-section" id="projetos">
+            <h2 data-i18n="meus_projetos">Meus Projetos</h2>
+            <div class="projetos-carousel">
+                <button class="carousel-arrow left" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="projetos-track">
+                    <div class="projeto-card">
+                        <img src="https://placehold.co/300x180" alt="Projeto 1" class="projeto-img">
+                        <h3 data-i18n="projeto1">Projeto 1</h3>
+                        <p class="projeto-desc" data-i18n="desc1">Descrição breve do projeto 1. Exemplo de texto para testar o layout.</p>
+                        <div class="projeto-tags">
+                            <span class="tag-react">React</span><span class="tag-node">Node.js</span><span class="tag-mongodb">MongoDB</span>
+                        </div>
+                        <div class="projeto-btns">
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fa-solid fa-eye"></i> <span data-i18n="ver_projeto">Ver projeto</span>
+                            </a>
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fab fa-github"></i> <span data-i18n="ver_codigo">Ver código</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projeto-card">
+                        <img src="https://placehold.co/300x180" alt="Projeto 2" class="projeto-img">
+                        <h3 data-i18n="projeto2">Projeto 2</h3>
+                        <p class="projeto-desc" data-i18n="desc1">Descrição breve do projeto 2. Exemplo de texto para testar o layout.</p>
+                        <div class="projeto-tags">
+                            <span class="tag-html">HTML</span><span class="tag-css">CSS</span><span class="tag-js">JavaScript</span>
+                        </div>
+                        <div class="projeto-btns">
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fa-solid fa-eye"></i> <span data-i18n="ver_projeto">Ver projeto</span>
+                            </a>
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fab fa-github"></i> <span data-i18n="ver_codigo">Ver código</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projeto-card">
+                        <img src="https://placehold.co/300x180" alt="Projeto 3" class="projeto-img">
+                        <h3 data-i18n="projeto3">Projeto 3</h3>
+                        <p class="projeto-desc" data-i18n="desc1">Descrição breve do projeto 3. Exemplo de texto para testar o layout.</p>
+                        <div class="projeto-tags">
+                            <span class="tag-java">Java</span><span>Spring Boot</span><span class="tag-mysql">MySQL</span>
+                        </div>
+                        <div class="projeto-btns">
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fa-solid fa-eye"></i> <span data-i18n="ver_projeto">Ver projeto</span>
+                            </a>
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fab fa-github"></i> <span data-i18n="ver_codigo">Ver código</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projeto-card">
+                        <img src="https://placehold.co/300x180" alt="Projeto 4" class="projeto-img">
+                        <h3 data-i18n="projeto4">Projeto 4</h3>
+                        <p class="projeto-desc" data-i18n="desc1">Descrição breve do projeto 4. Exemplo de texto para testar o layout.</p>
+                        <div class="projeto-tags">
+                            <span class="tag-php">PHP</span><span>Laravel</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="projeto-btns">
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fa-solid fa-eye"></i> <span data-i18n="ver_projeto">Ver projeto</span>
+                            </a>
+                            <a href="#" class="btn-proj btn-mini" target="_blank">
+                                <i class="fab fa-github"></i> <span data-i18n="ver_codigo">Ver código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="carousel-arrow right" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="main-section" id="contato">
+            <h2 data-i18n="contatos">Contatos</h2>
+            <div class="contato-icons">
+                <span class="contato-email" id="abrir-form-email" style="cursor:pointer;">
+                    <i class="fas fa-envelope"></i>
+                    <span>tiagomarquesgabriel2405@gmail.com</span>
+                </span>
+                <a href="https://wa.me/5599999999999" class="contato-circle" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/" class="contato-circle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/" class="contato-circle" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/" class="contato-circle" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://tiktok.com/" class="contato-circle" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://linkedin.com/" class="contato-circle" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/" class="contato-circle" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div id="form-email-modal" class="form-email-modal" style="display:none;">
+                <div class="form-email-content">
+                    <span class="close-form-email" id="close-form-email">&times;</span>
+                    <h3 data-i18n="enviar_mensagem">Enviar mensagem</h3>
+                    <form id="form-email-contato" action="https://formsubmit.co/tiagomarquesgabriel2405@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="#contato">
+                        <div class="form-group">
+                            <label for="nome" data-i18n="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem" data-i18n="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-proj" data-i18n="enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p data-i18n="footer">© 2025 Tiago Marques Gabriel</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
